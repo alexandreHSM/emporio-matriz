@@ -1,0 +1,116 @@
+
+h2{
+  font-size: 1.8rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero {
+  height: 460px;
+  border-radius: 12px;
+  margin: 20px;
+  background-image: url('AdobeStock_1355575082.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  border-radius: 12px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  margin-left: 50px;
+  color: white;
+  max-width: 450px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.hero-content img{
+  width: 100px;
+}
+
+/*categorias*/
+.categorias{
+  padding: 50px 30px;
+}
+
+.categoria-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+.categoria-card{
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-top: 25px;
+  transition: .5s;
+}
+
+.categoria-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.categoria-card:hover{
+  scale: calc(1.02);
+}
+
+/*produtos*/
+.produtos{
+  padding: 50px 30px;
+}
+
+.produtos-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+.produtos-card{
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-top: 25px;
+  transition: .5s;
+}
+
+.produtos-card img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.produtos-card:hover{
+  scale: calc(1.02);
+}
+
+
+
