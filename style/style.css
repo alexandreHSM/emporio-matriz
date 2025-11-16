@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url(home.css);
+@import url(header.css);
+@import url(footer.css);
 :root{
     --cor-principal: #114f14;
     --verde-claro: #67d877;
     --bg-color: #f8f8f8;
-    --bege:  #f8f8f8;
+    --cinza:  #d6d2d2;
     --cor-contraste: #6b4f2e;
     --cor-escura: #050505;
 }
@@ -23,6 +25,7 @@ body{
 }
 
 .btn-default{
+    text-decoration: none;
     border: none;
     display: flex;
     align-items: center;
@@ -40,7 +43,7 @@ body{
 .btn-default:hover{
     background-color: var(--verde-claro);
     color: var(--cor-escura);
-    scale: calc(1.2);
+    scale: calc(1.1);
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
 }
 
