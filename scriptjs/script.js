@@ -7,20 +7,3 @@ menu.addEventListener('click', () =>{
     navBar.classList.toggle('active');
 })
 
-
-//animação de scroll
-ScrollReveal().reveal('.hero', {
-    origin: 'bottom',
-    duration: 2000,
-    distance: '20%',
-});
-ScrollReveal().reveal('.categorias', {
-    origin: 'bottom',
-    duration: 3000,
-    distance: '20%',
-});
-ScrollReveal().reveal('.produtos', {
-    origin: 'bottom',
-    duration: 3000,
-    distance: '20%',
-});
