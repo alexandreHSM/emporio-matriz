@@ -47,6 +47,106 @@ body{
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
 }
 
+main{
+    display: none;
+}
+
+main.active{
+    display: block;
+}
+
+/*banner*/
+@media (max-width: 800px) {
+    .hero {
+        height: 360px;
+        margin: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-content img {
+        width: 80px;
+    }
+}
+
+/*categorias*/
+@media (max-width: 800px) {
+    .categorias {
+        padding: 30px 20px;
+    }
+
+    .categoria-grid {
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+    .categoria-card img {
+        height: 160px;
+        border-radius: 12px;
+    }
+
+    .categoria-card span {
+        font-size: 0.9rem;
+    }
+}
+
+/*produtos*/
+/* --- CARROSSEL MOBILE --- */
+@media (max-width: 800px) {
+    .produtos {
+        padding: 20px 0;
+    }
+
+    .produtos-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding: 20px;
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .produtos-grid::-webkit-scrollbar {
+        display: none; /* Chrome */
+    }
+
+    .produtos-card {
+        flex: 0 0 70%; /* tamanho dos cards no carrossel */
+        scroll-snap-align: center;
+        background: #fff;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .produtos-card img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .produtos-card span {
+        font-size: 1.1rem;
+        font-weight: 600;
+        display: block;
+        margin-top: 8px;
+    }
+
+    .produtos-card p {
+        font-size: 0.9rem;
+        margin-top: 4px;
+        color: #444;
+    }
+}
+
 
 
 
