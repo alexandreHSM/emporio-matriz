@@ -2,6 +2,8 @@
 @import url(home.css);
 @import url(header.css);
 @import url(footer.css);
+@import url(produtos.css);
+
 :root{
     --cor-principal: #114f14;
     --verde-claro: #67d877;
@@ -47,13 +49,7 @@ body{
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
 }
 
-main{
-    display: none;
-}
 
-main.active{
-    display: block;
-}
 
 /*banner*/
 @media (max-width: 800px) {
@@ -112,11 +108,11 @@ main.active{
         scroll-snap-type: x mandatory;
         gap: 20px;
         padding: 20px;
-        scrollbar-width: none; /* Firefox */
+        scrollbar-width: none; 
     }
 
     .produtos-grid::-webkit-scrollbar {
-        display: none; /* Chrome */
+        display: none; 
     }
 
     .produtos-card {
